@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="bg-gray-800 text-white flex justify-center items-center">
+    <h1 class="text-3xl font-bold">
+      To do list
+    </h1>
+  </header>
+  <main class=" mx-auto p-4 bg-gray-600 flex flex-col items-center">
+    <form id="form" class="flex flex-col gap-2 w-52 " action="" method="post">
+      <label for="name">Task</label>
+      <input type="text" name="name" id="task">
+      <label for="description">Description</label>
+      <input type="text" name="description" id="task">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-10 rounded" type="submit">Add</button>
+    </form>
+
+    <article id="containerTasks" class="container flex flex-wrap gap-24 w-full h-full justify-center items-center">
+    </article>
+  </main>
+  <footer class="bg-gray-800 text-white flex justify-center items-center">
+    <p> Trigo Cesar - 2024 </p>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
